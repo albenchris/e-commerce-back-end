@@ -65,12 +65,23 @@ router.get('/:id', (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
-
 });
 
 // create a new tag
 router.post('/', (req, res) => {
-
+  /* req.body should look like this...
+    {
+      tag_name: "modern"
+    }
+  */
+  Tag.create({
+    tag_name: req.body.tag_name
+  })
+    .then(dbTagData => res.json(dbTagData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });  
 });
 
 // update a tag's name
