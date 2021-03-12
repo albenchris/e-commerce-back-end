@@ -3,6 +3,7 @@ const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
 
+// get all categories
 router.get('/', (req, res) => {
   // find all categories
   Category.findAll({
@@ -30,6 +31,7 @@ router.get('/', (req, res) => {
     });
 });
 
+// get one category
 router.get('/:id', (req, res) => {
   // find one category by its `id` value
   Category.findOne({
@@ -66,14 +68,30 @@ router.get('/:id', (req, res) => {
     });
 });
 
+// create a category
 router.post('/', (req, res) => {
   // create a new category
+  /* req.body should look like this...
+    {
+      category_name: "Toys"
+    }
+  */
+  Category.create({
+    category_name: req.body.category_name
+  })
+    .then(dbCategoryData => res.json(dbCategoryData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
+// update a category
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
 });
 
+// delete a category
 router.delete('/:id', (req, res) => {
   // delete a category by its `id` value
 });
