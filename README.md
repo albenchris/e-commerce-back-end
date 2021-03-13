@@ -3,10 +3,20 @@
 ## Description
 A back end setup for an online store using Node.js, Express.js, Sequelize and Dotenv. This application will help you with your product management. With great Front End and Payment Processing teams you're store will be sure to succeed!
 
-<!-- ## Usage
+## Usage
+Create a .env file that looks like this:
 
+DB_NAME='ecommerce_db'
 
-See video: -->
+DB_USER='root'
+
+DB_PW='password' (replace password with your MySQL password)
+
+For further instructions, see the following videos:
+
+[Creating Database](https://drive.google.com/file/d/1BlEMVbzRuy_XtgUZ4fWN1v5LulT5jaLK/view)
+
+[Testing the Data](https://drive.google.com/file/d/1H_Gaq7kocvkYO3heBYcUjin2ow2HYwbH/view)
 
 ## Tools
 * Node.js: [download](https://nodejs.org/en/download/)
