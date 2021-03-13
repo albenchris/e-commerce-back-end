@@ -16,7 +16,7 @@ For further instructions, see the following videos:
 
 [Creating Database](https://drive.google.com/file/d/1BlEMVbzRuy_XtgUZ4fWN1v5LulT5jaLK/view)
 
-[Testing the Data](https://drive.google.com/file/d/1H_Gaq7kocvkYO3heBYcUjin2ow2HYwbH/view)
+[Testing the Data](https://drive.google.com/file/d/1GAx2Ix0s6CiYzUcYvfOkfNlXwOz7rabf/view)
 
 ## Tools
 * Node.js: [download](https://nodejs.org/en/download/)
